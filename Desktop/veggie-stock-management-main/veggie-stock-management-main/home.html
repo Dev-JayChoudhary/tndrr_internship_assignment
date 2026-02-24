@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VeggieTrack - Smart Vegetable Stock Management System. Track freshness, manage inventory, reduce waste.">
+    <title>VeggieTrack | Fresh Produce Inventory Made Simple</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">🥬 VeggieTrack</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html" class="nav-btn nav-btn-outline">Login</a>
+                <a href="index.html" class="nav-btn nav-btn-filled">Sign Up Free</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">🌿 #1 Vegetable Stock Management</span>
+            <h1 class="hero-title">
+                Keep Your <span class="text-gradient">Produce Fresh</span>,<br>
+                Your Business <span class="text-gradient">Thriving</span>
+            </h1>
+            <p class="hero-description">
+                Track shelf life, manage stock levels, and reduce waste with our intelligent
+                vegetable inventory system. Built for vendors, markets, and fresh produce businesses.
+            </p>
+            <div class="hero-actions">
+                <a href="index.html" class="btn btn-hero-primary">
+                    Get Started Free →
+                </a>
+                <a href="#about" class="btn btn-hero-secondary">
+                    Learn More
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">500+</span>
+                    <span class="hero-stat-label">Active Users</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">50K+</span>
+                    <span class="hero-stat-label">Items Tracked</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">30%</span>
+                    <span class="hero-stat-label">Less Waste</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT US ========== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Why Choose <span class="text-gradient">VeggieTrack</span>?</h2>
+                <p class="section-subtitle">We're on a mission to reduce food waste and help fresh produce businesses
+                    thrive through smart inventory management.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Shelf Life Tracking</h3>
+                    <p>Real-time tracking of remaining shelf life for every item. Get alerts before produce expires.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Insights into sales patterns and stock levels to optimize ordering and reduce waste.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Instant updates and real-time inventory management. No delays, no downtime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data stays private. We never share individual inventory details — guaranteed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Access your dashboard from any device — desktop, tablet, or mobile phone.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Reduce food waste by up to 30% with proactive expiry management and smart alerts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR PLANS ========== -->
+    <section class="section plans-section" id="plans">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Choose Your <span class="text-gradient">Plan</span></h2>
+                <p class="section-subtitle">Start free, upgrade as you grow. No hidden fees, cancel anytime.</p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Free</h3>
+                        <div class="plan-price">
+                            <span class="plan-currency">₹</span>
+                            <span class="plan-amount">0</span>
+                            <span class="plan-period">/month</span>
+                        </div>
+                        <p class="plan-desc">Perfect for getting started</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Up to 50 products</li>
+                        <li>✅ Shelf life tracking</li>
+                        <li>✅ Basic dashboard</li>
+                        <li>✅ Sales recording</li>
+                        <li>❌ Advanced analytics</li>
+                        <li>❌ Priority support</li>
+                    </ul>
+                    <a href="index.html" class="btn btn-plan">Get Started</a>
+                </div>
+                <div class="plan-card plan-popular">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="plan-currency">₹</span>
+                            <span class="plan-amount">299</span>
+                            <span class="plan-period">/month</span>
+                        </div>
+                        <p class="plan-desc">For growing businesses</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited products</li>
+                        <li>✅ Shelf life tracking</li>
+                        <li>✅ Advanced dashboard</li>
+                        <li>✅ Sales analytics</li>
+                        <li>✅ Advanced analytics</li>
+                        <li>❌ Dedicated support</li>
+                    </ul>
+                    <a href="index.html" class="btn btn-plan btn-plan-primary">Get Started</a>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="plan-currency">₹</span>
+                            <span class="plan-amount">699</span>
+                            <span class="plan-period">/month</span>
+                        </div>
+                        <p class="plan-desc">For large operations</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited everything</li>
+                        <li>✅ Multi-user access</li>
+                        <li>✅ Custom reports</li>
+                        <li>✅ API access</li>
+                        <li>✅ Advanced analytics</li>
+                        <li>✅ 24/7 dedicated support</li>
+                    </ul>
+                    <a href="index.html" class="btn btn-plan">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS (Carousel) ========== -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="text-gradient">Users Say</span></h2>
+                <p class="section-subtitle">Join hundreds of happy vendors and businesses already using VeggieTrack.</p>
+            </div>
+
+            <div class="testimonial-slider-container">
+                <!-- Left Arrow -->
+                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous Slide">❮</button>
+
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card" data-index="0">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rajesh Sharma"
+                                class="testimonial-img">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"VeggieTrack has transformed how I manage my vegetable shop. The
+                                shelf life tracking alone has saved me from throwing away expired produce. Highly
+                                recommended!"</p>
+                            <div class="testimonial-author">
+                                <h4>Rajesh Sharma</h4>
+                                <span class="testimonial-role">Fresh Market Owner, Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card" data-index="1">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Kulkarni"
+                                class="testimonial-img">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"The dashboard gives me a clear picture of what's selling and
+                                what's about to expire. I've reduced waste by 25% in just two months. Simply amazing!"
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Priya Kulkarni</h4>
+                                <span class="testimonial-role">Organic Farm Store, Pune</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card" data-index="2">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit Kumar"
+                                class="testimonial-img">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Easy to use, beautiful interface, and the expiry alerts are a
+                                lifesaver. My team picks it up instantly. Best inventory tool for fresh produce
+                                businesses."</p>
+                            <div class="testimonial-author">
+                                <h4>Amit Kumar</h4>
+                                <span class="testimonial-role">Wholesale Vendor, Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="testimonial-card" data-index="3">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Sunita Patel"
+                                class="testimonial-img">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Since using VeggieTrack, our restaurant has cut food costs by
+                                20%. The real-time inventory updates help us order smarter and waste less. A must-have
+                                for any food business!"</p>
+                            <div class="testimonial-author">
+                                <h4>Sunita Patel</h4>
+                                <span class="testimonial-role">Restaurant Owner, Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="testimonial-card" data-index="4">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Vikram Singh"
+                                class="testimonial-img">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Managing multiple store locations was a nightmare before
+                                VeggieTrack. Now I can monitor all inventory from one dashboard. The analytics helped us
+                                optimize our supply chain significantly."</p>
+                            <div class="testimonial-author">
+                                <h4>Vikram Singh</h4>
+                                <span class="testimonial-role">Supermarket Chain Manager, Chennai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Arrow -->
+                <button class="slider-btn next-btn" id="nextBtn" aria-label="Next Slide">❯</button>
+
+                <!-- Dots only in controls -->
+                <div class="testimonial-controls">
+                    <div class="slider-dots" id="sliderDots">
+                        <!-- Dots injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEEDBACK ========== -->
+    <section class="section feedback-section" id="feedback">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Feedback</span>
+                <h2 class="section-title">Share Your <span class="text-gradient">Thoughts</span></h2>
+                <p class="section-subtitle">We're always improving. Let us know how we can serve you better.</p>
+            </div>
+            <div class="feedback-grid">
+                <!-- Left: image-only card (image provided) -->
+                <div class="feedback-form-container">
+                    <div class="feedback-card image-only">
+                        <div class="feedback-image" style="background-image: url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&h=500&fit=crop');"></div>
+                    </div>
+                </div>
+
+                <!-- Middle: form-only card -->
+                <div class="feedback-form-container">
+                    <div class="feedback-card form-only">
+                        <form class="feedback-form" id="feedbackForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="feedbackName">Your Name</label>
+                                    <input type="text" id="feedbackName" placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="feedbackEmail">Email Address</label>
+                                    <input type="email" id="feedbackEmail" placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackRating">Rating</label>
+                                <select id="feedbackRating">
+                                    <option value="0">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                                    <option value="4">⭐⭐⭐⭐ Good</option>
+                                    <option value="3">⭐⭐⭐ Average</option>
+                                    <option value="2">⭐⭐ Below Average</option>
+                                    <option value="1">⭐ Poor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackMessage">Your Feedback</label>
+                                <textarea id="feedbackMessage" rows="4" placeholder="Tell us what you think..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: image placeholder (empty for future image) -->
+                <div class="feedback-form-container">
+                    <div class="feedback-card placeholder">
+                        <!-- Right-side: local vegetable-seller image provided by user -->
+                        <img src="C:\Users\jkc90\Downloads\veggie-stock-management-main\veggie-stock-management-main\assets\images\gettyimages-1140004077-612x612.jpg" alt="Vegetable seller" class="feedback-right-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT US ========== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you. Reach out and we'll get back
+                    within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:support@veggietrack.com"
+                                    style="color: inherit; text-decoration: none;">support@veggietrack.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+919876543210" style="color: inherit; text-decoration: none;">+91 98765
+                                    43210</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Green Market Road, Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" rows="4" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SCROLL TO TOP BUTTON ========== -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">↑</button>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>🥬 VeggieTrack</h3>
+                    <p>Smart vegetable stock management for modern businesses. Track freshness, reduce waste, grow
+                        profits.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#plans">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html#refund">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter / X</a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest news and offers.</p>
+                    <div class="subscribe-form">
+                        <input type="email" id="subscribeEmail" placeholder="Enter your email">
+                        <button class="btn btn-subscribe" id="subscribeBtn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VeggieTrack. All rights reserved. Made with 💚 for fresh produce businesses.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="assets/js/homepage.js"></script>
+
+</body>
+
+</html>
