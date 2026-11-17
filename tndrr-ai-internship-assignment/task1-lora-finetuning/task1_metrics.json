@@ -1,0 +1,85 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lora_hyperparams": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "learning_rate": 0.0002,
+    "epochs": 3,
+    "batch_size": 8,
+    "trainable_params": 8798208,
+    "total_params": 502830976,
+    "trainable_pct": 1.75,
+    "training_time_sec": 34.1
+  },
+  "baseline_metrics": {
+    "stage": "Base_Qwen2.5_0.5B",
+    "num_examples": 60,
+    "valid_json_rate_pct": 100.0,
+    "exact_schema_match_pct": 98.33,
+    "exact_record_match_pct": 0.0,
+    "field_level_accuracy_pct": 52.33
+  },
+  "finetuned_metrics": {
+    "stage": "LoRA_FineTuned_Qwen2.5_0.5B",
+    "num_examples": 60,
+    "valid_json_rate_pct": 100.0,
+    "exact_schema_match_pct": 100.0,
+    "exact_record_match_pct": 95.0,
+    "field_level_accuracy_pct": 98.67
+  },
+  "top_3_failures": [
+    {
+      "test_idx": 55,
+      "input": "Blocked a fake $899 charge from Apple Store, card is safe now.",
+      "ground_truth": {
+        "intent": "fraud_alert",
+        "amount": 899.0,
+        "currency": "USD",
+        "merchant": "Apple Store",
+        "urgency": "high"
+      },
+      "raw_prediction": "{\"intent\":\"fraud_alert\",\"amount\":899.0,\"currency\":\"USD\",\"merchant\":\"Apple Store\",\"urgency\":\"low\"}",
+      "valid_json": true,
+      "schema_match": true
+    },
+    {
+      "test_idx": 57,
+      "input": "How much balance left? Paid 500 to Uber earlier.",
+      "ground_truth": {
+        "intent": "balance_inquiry",
+        "amount": 500.0,
+        "currency": "INR",
+        "merchant": "Uber",
+        "urgency": "low"
+      },
+      "raw_prediction": "{\"intent\":\"balance_inquiry\",\"amount\":500.0,\"currency\":\"USD\",\"merchant\":\"Uber\",\"urgency\":\"low\"}",
+      "valid_json": true,
+      "schema_match": true
+    },
+    {
+      "test_idx": 59,
+      "input": "\u20b90.00 test auth from Razorpay\u2014is this fraud?",
+      "ground_truth": {
+        "intent": "fraud_alert",
+        "amount": 0.0,
+        "currency": "INR",
+        "merchant": "Razorpay",
+        "urgency": "high"
+      },
+      "raw_prediction": "{\"intent\":\"fraud_alert\",\"amount\":null,\"currency\":null,\"merchant\":\"Razorpay\",\"urgency\":\"high\"}",
+      "valid_json": true,
+      "schema_match": true
+    }
+  ],
+  "all_failures_count": 3
+}

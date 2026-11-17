@@ -1,0 +1,180 @@
+{
+  "FP16_16bit": {
+    "model_tag": "qwen2.5:1.5b-instruct-fp16",
+    "gpu_vram_used_mb": 5291,
+    "ollama_ps": "NAME                          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen2.5:1.5b-instruct-fp16    d8035f049126    3.2 GB    100% GPU     2048       llamacpp    4 minutes from now",
+    "avg_prompt_eval_tps": 2610.09,
+    "avg_generation_tps": 64.75,
+    "outputs": [
+      {
+        "id": 1,
+        "category": "Math",
+        "prompt": "Solve step-by-step: A train travels 180 km in 2.5 hours, then 120 km in 1.5 hours. What is its average speed in km/h?",
+        "response": "To find the average speed of the train, we need to calculate the total distance traveled and the total time taken, and then use the formula for average speed:\n\n\\[\n\\text{Average speed} = \\frac{\\text{Total distance}}{\\text{Total time}}\n\\]\n\nFirst, let's find the total distance traveled. The train travels 180 km and then 120 km, so the total distance is:\n\n\\[\n180 \\text{ km} + 120 \\text{ km} = 300 \\text{ km}\n\\]\n\nNext, let's find the total time taken. The train takes 2.5 hours for the first part and 1.5 hours for the second part, so the total time is:",
+        "gen_tokens": 160,
+        "gen_tps": 64.83
+      },
+      {
+        "id": 2,
+        "category": "Logic",
+        "prompt": "If all Bloops are Razzies and some Razzies are Lazzies, does it strictly follow that some Bloops are Lazzies? Answer Yes or No and explain in 2 sentences.",
+        "response": "Yes, it strictly follows that some Bloops are Lazzies. Since all Bloops are Razzies and some Razzies are Lazzies, it logically follows that there must be at least some Bloops that are also Lazzies.",
+        "gen_tokens": 52,
+        "gen_tps": 65.59
+      },
+      {
+        "id": 3,
+        "category": "Code",
+        "prompt": "Write a Python function `is_balanced(s: str) -> bool` that checks if parentheses `()`, `[]`, and `{}` are balanced.",
+        "response": "To check if parentheses are balanced, we can use a stack to keep track of opening parentheses. For each character in the string, if it's an opening parenthesis, we push it onto the stack. If it's a closing parenthesis, we check if the stack is empty or if the top of the stack doesn't match the corresponding opening parenthesis. If either condition is true, the parentheses are not balanced. If we finish iterating through the string and the stack is empty, the parentheses are balanced.\n\nHere's how you can implement this:\n\n```python\ndef is_balanced(s: str) -> bool:\n    stack = []\n    mapping = {')': '(', ']': '[', '}': '{'}\n    \n    for char in s:\n        if char in mapping.values():\n            stack.append(char)",
+        "gen_tokens": 160,
+        "gen_tps": 64.62
+      },
+      {
+        "id": 4,
+        "category": "JSON",
+        "prompt": "Convert this into valid JSON with keys \"city\", \"temp_c\", and \"condition\": \"Tomorrow in Jaipur expect sunny skies with a high of 29 degrees Celsius.\"",
+        "response": "```json\n{\n  \"city\": \"Jaipur\",\n  \"temp_c\": 29,\n  \"condition\": \"sunny skies\"\n}\n```",
+        "gen_tokens": 33,
+        "gen_tps": 66.08
+      },
+      {
+        "id": 5,
+        "category": "Systems",
+        "prompt": "In 3 concise bullet points, explain why GPU memory bandwidth bottlenecks autoregressive LLM decoding at batch size 1.",
+        "response": "- GPU memory bandwidth is limited, constraining the speed at which data can be transferred between the GPU and memory.\n- Autoregressive LLM decoding processes sequential data, requiring continuous access to large amounts of memory.\n- At batch size 1, the model must read and write to memory for each token, leading to high memory access rates.\n- This high demand for memory bandwidth can lead to performance bottlenecks, impacting the model's ability to process data efficiently.",
+        "gen_tokens": 95,
+        "gen_tps": 64.79
+      },
+      {
+        "id": 6,
+        "category": "Summarization",
+        "prompt": "Summarize in 1 sentence: Quantization reduces neural network weight precision from 16-bit floats to 4-bit integers, cutting VRAM usage by ~70% and speeding up memory-bound token generation with minimal perplexity loss.",
+        "response": "Quantization, by reducing neural network weights from 16-bit floats to 4-bit integers, significantly cuts VRAM usage by 70%, speeds up memory-bound token generation, and minimizes perplexity loss.",
+        "gen_tokens": 45,
+        "gen_tps": 64.87
+      },
+      {
+        "id": 7,
+        "category": "SQL",
+        "prompt": "Write a SQL query to find the top 3 departments by average salary from an `employees(id, name, department, salary)` table.",
+        "response": "To find the top 3 departments by average salary from the `employees` table, you can use the following SQL query:\n\n```sql\nSELECT department, AVG(salary) AS average_salary\nFROM employees\nGROUP BY department\nORDER BY average_salary DESC\nLIMIT 3;\n```\n\n### Explanation:\n- **SELECT department, AVG(salary) AS average_salary**: This part of the query selects the department and calculates the average salary for each department.\n- **FROM employees**: This specifies the table from which to retrieve the data.\n- **GROUP BY department**: This groups the results by department so that the average salary is calculated for each department.\n- **ORDER BY average_salary DESC**: This orders the results by the average salary in descending order, so the department with the highest average salary appears first",
+        "gen_tokens": 160,
+        "gen_tps": 63.6
+      },
+      {
+        "id": 8,
+        "category": "EdgeCase",
+        "prompt": "What is the 15th prime number? Give the exact number first, then list the primes up to it.",
+        "response": "The 15th prime number is 61. Here is the list of the first 15 prime numbers:\n\n1. 2\n2. 3\n3. 5\n4. 7\n5. 11\n6. 13\n7. 17\n8. 19\n9. 23\n10. 29\n11. 31\n12. 37\n13. 41\n14. 43\n15. 61\n\nSo, the 15th prime number is 61.",
+        "gen_tokens": 132,
+        "gen_tps": 64.28
+      },
+      {
+        "id": 9,
+        "category": "Extraction",
+        "prompt": "Extract all dates and monetary amounts from: 'Invoice #402 issued on 14-Oct-2026 for \u20b918,500 is due by 30-Nov-2026 with a \u20b9500 late fee.'",
+        "response": "From the given text, the dates and monetary amounts are:\n\nDates:\n- Invoice #402 issued on 14-Oct-2026\n- Due by 30-Nov-2026\n\nMonetary amounts:\n- \u20b918,500 (amount of the invoice)\n- \u20b9500 (late fee)",
+        "gen_tokens": 73,
+        "gen_tps": 64.71
+      },
+      {
+        "id": 10,
+        "category": "Reasoning",
+        "prompt": "A bat and a ball cost \u20b9110 in total. The bat costs \u20b9100 more than the ball. How much does the ball cost? Show the equation.",
+        "response": "Let's denote the cost of the ball as \\( x \\) rupees. According to the problem, the bat costs \u20b9100 more than the ball, so the cost of the bat is \\( x + 100 \\) rupees.\n\nThe total cost of the bat and the ball is given as \u20b9110. Therefore, we can set up the following equation:\n\n\\[ x + (x + 100) = 110 \\]\n\nSimplifying the left side of the equation:\n\n\\[ 2x + 100 = 110 \\]\n\nSubtract 100 from both sides to isolate the term with \\( x \\):\n\n\\[ 2x = 10 \\]\n\nNow, divide both sides by 2 to",
+        "gen_tokens": 160,
+        "gen_tps": 64.1
+      }
+    ]
+  },
+  "Q4_K_M_4bit": {
+    "model_tag": "qwen2.5:1.5b-instruct-q4_K_M",
+    "gpu_vram_used_mb": 3271,
+    "ollama_ps": "NAME                            ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen2.5:1.5b-instruct-q4_K_M    65ec06548149    1.1 GB    100% GPU     2048       llamacpp    4 minutes from now",
+    "avg_prompt_eval_tps": 3292.24,
+    "avg_generation_tps": 137.57,
+    "outputs": [
+      {
+        "id": 1,
+        "category": "Math",
+        "prompt": "Solve step-by-step: A train travels 180 km in 2.5 hours, then 120 km in 1.5 hours. What is its average speed in km/h?",
+        "response": "To find the average speed of the train, we need to determine the total distance traveled and the total time taken, and then use the formula for average speed, which is the total distance divided by the total time.\n\nFirst, let's find the total distance traveled:\n- The train travels 180 km in the first part.\n- The train travels 120 km in the second part.\n- Therefore, the total distance traveled is \\(180 \\text{ km} + 120 \\text{ km} = 300 \\text{ km}\\).\n\nNext, let's find the total time taken:\n- The train takes 2.5 hours for the first part.\n- The train takes 1.5 hours for the second part.\n- Therefore,",
+        "gen_tokens": 160,
+        "gen_tps": 132.12
+      },
+      {
+        "id": 2,
+        "category": "Logic",
+        "prompt": "If all Bloops are Razzies and some Razzies are Lazzies, does it strictly follow that some Bloops are Lazzies? Answer Yes or No and explain in 2 sentences.",
+        "response": "Yes, it strictly follows that some Bloops are Lazzies. Since all Bloops are Razzies and some Razzies are Lazzies, it logically follows that there is at least one Razzie that is also a Lizzard, which means some Bloops (which are Razzies) are Lazzies.",
+        "gen_tokens": 69,
+        "gen_tps": 139.03
+      },
+      {
+        "id": 3,
+        "category": "Code",
+        "prompt": "Write a Python function `is_balanced(s: str) -> bool` that checks if parentheses `()`, `[]`, and `{}` are balanced.",
+        "response": "```python\ndef is_balanced(s: str) -> bool:\n    \"\"\"\n    Check if the parentheses in the string are balanced.\n    \n    Args:\n    s (str): The string containing parentheses to check.\n    \n    Returns:\n    bool: True if the parentheses are balanced, False otherwise.\n    \"\"\"\n    stack = []\n    mapping = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    \n    for char in s:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping.keys():\n            if not stack or mapping[char] != stack.pop():\n                return False\n        else:\n            continue\n    \n    return not stack\n\n# Check function with provided data points\ndef check():\n    assert is_balanced(\"()\") == True\n    assert is",
+        "gen_tokens": 160,
+        "gen_tps": 138.09
+      },
+      {
+        "id": 4,
+        "category": "JSON",
+        "prompt": "Convert this into valid JSON with keys \"city\", \"temp_c\", and \"condition\": \"Tomorrow in Jaipur expect sunny skies with a high of 29 degrees Celsius.\"",
+        "response": "```json\n{\n  \"city\": \"Jaipur\",\n  \"temp_c\": 29,\n  \"condition\": \"sunny skies\"\n}\n```",
+        "gen_tokens": 33,
+        "gen_tps": 139.72
+      },
+      {
+        "id": 5,
+        "category": "Systems",
+        "prompt": "In 3 concise bullet points, explain why GPU memory bandwidth bottlenecks autoregressive LLM decoding at batch size 1.",
+        "response": "- GPU memory bandwidth is limited, constraining the speed of data transfer between the GPU and memory.\n- Batch size 1 requires processing each token individually, leading to increased memory access and slower data transfer.\n- This bottleneck can significantly slow down the decoding process, impacting the overall performance of the autoregressive language model.",
+        "gen_tokens": 65,
+        "gen_tps": 136.69
+      },
+      {
+        "id": 6,
+        "category": "Summarization",
+        "prompt": "Summarize in 1 sentence: Quantization reduces neural network weight precision from 16-bit floats to 4-bit integers, cutting VRAM usage by ~70% and speeding up memory-bound token generation with minimal perplexity loss.",
+        "response": "Quantization reduces neural network weights from 16-bit floats to 4-bit integers, decreasing VRAM usage by 70% and accelerating memory-bound token generation while minimizing perplexity loss.",
+        "gen_tokens": 40,
+        "gen_tps": 139.06
+      },
+      {
+        "id": 7,
+        "category": "SQL",
+        "prompt": "Write a SQL query to find the top 3 departments by average salary from an `employees(id, name, department, salary)` table.",
+        "response": "To find the top 3 departments by average salary from the `employees` table, you can use the following SQL query:\n\n```sql\nSELECT department, AVG(salary) AS average_salary\nFROM employees\nGROUP BY department\nORDER BY average_salary DESC\nLIMIT 3;\n```\n\n### Explanation:\n- **`SELECT department, AVG(salary) AS average_salary`**: This part of the query selects the department and calculates the average salary for each department.\n- **`FROM employees`**: This specifies the table from which to retrieve the data.\n- **`GROUP BY department`**: This groups the results by department, so that the average salary is calculated for each department.\n- **`ORDER BY average_salary DESC`**: This orders the results by average salary in descending order, so that",
+        "gen_tokens": 160,
+        "gen_tps": 135.38
+      },
+      {
+        "id": 8,
+        "category": "EdgeCase",
+        "prompt": "What is the 15th prime number? Give the exact number first, then list the primes up to it.",
+        "response": "The 15th prime number is 47. Here is the list of the first 15 prime numbers:\n\n1. 2\n2. 3\n3. 5\n4. 7\n5. 11\n6. 13\n7. 17\n8. 19\n9. 23\n10. 29\n11. 31\n12. 37\n13. 41\n14. 43\n15. 47",
+        "gen_tokens": 117,
+        "gen_tps": 139.44
+      },
+      {
+        "id": 9,
+        "category": "Extraction",
+        "prompt": "Extract all dates and monetary amounts from: 'Invoice #402 issued on 14-Oct-2026 for \u20b918,500 is due by 30-Nov-2026 with a \u20b9500 late fee.'",
+        "response": "From the given text, the dates and monetary amounts extracted are:\n\nDates:\n- Invoice #402 issued on 14-Oct-2026\n- Due by 30-Nov-2026\n\nMonetary Amounts:\n- \u20b918,500\n- \u20b9500 late fee",
+        "gen_tokens": 68,
+        "gen_tps": 140.58
+      },
+      {
+        "id": 10,
+        "category": "Reasoning",
+        "prompt": "A bat and a ball cost \u20b9110 in total. The bat costs \u20b9100 more than the ball. How much does the ball cost? Show the equation.",
+        "response": "Let's denote the cost of the ball as \\( x \\) rupees. According to the problem, the bat costs \u20b9100 more than the ball, so the cost of the bat can be expressed as \\( x + 100 \\) rupees.\n\nThe total cost of the bat and the ball is given as \u20b9110. Therefore, we can set up the following equation:\n\n\\[ x + (x + 100) = 110 \\]\n\nNow, let's solve this equation step by step:\n\n1. Combine like terms on the left side of the equation:\n\\[ 2x + 100 = 110 \\]\n\n2. Subtract 100 from both sides to isolate the term with \\( x \\):\n\\[",
+        "gen_tokens": 160,
+        "gen_tps": 135.58
+      }
+    ]
+  }
+}

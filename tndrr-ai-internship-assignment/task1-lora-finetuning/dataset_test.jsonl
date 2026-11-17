@@ -1,0 +1,60 @@
+{"prompt": "URGENT: Unauthorized charge of \u20b9149.0 at Zomato!! Freeze card now!", "target": {"intent": "fraud_alert", "amount": 149.0, "currency": "INR", "merchant": "Zomato", "urgency": "high"}}
+{"prompt": "Order at Nykaa never arrived, need my \u20b91299.0 back immediately!", "target": {"intent": "refund_request", "amount": 1299.0, "currency": "INR", "merchant": "Nykaa", "urgency": "high"}}
+{"prompt": "Sent 299.5 INR to Apple Store for this month's invoice.", "target": {"intent": "payment", "amount": 299.5, "currency": "INR", "merchant": "Apple Store", "urgency": "low"}}
+{"prompt": "Just cleared \u20ac499.0 bill with Blinkit.", "target": {"intent": "payment", "amount": 499.0, "currency": "EUR", "merchant": "Blinkit", "urgency": "low"}}
+{"prompt": "I don't use Netflix anymore, please terminate my membership.", "target": {"intent": "subscription_cancel", "amount": null, "currency": null, "merchant": "Netflix", "urgency": "low"}}
+{"prompt": "Can I get a refund for my Croma purchase? Not sure of exact amount.", "target": {"intent": "refund_request", "amount": null, "currency": null, "merchant": "Croma", "urgency": "low"}}
+{"prompt": "Someone is trying to use my card at IRCTC right now, help!", "target": {"intent": "fraud_alert", "amount": null, "currency": null, "merchant": "IRCTC", "urgency": "high"}}
+{"prompt": "Just cleared \u20ac340.0 bill with Razorpay.", "target": {"intent": "payment", "amount": 340.0, "currency": "EUR", "merchant": "Razorpay", "urgency": "low"}}
+{"prompt": "How much INR do I have left before paying Spotify?", "target": {"intent": "balance_inquiry", "amount": null, "currency": "INR", "merchant": "Spotify", "urgency": "low"}}
+{"prompt": "Charged $340.0 at Nykaa on my corporate card yesterday.", "target": {"intent": "payment", "amount": 340.0, "currency": "USD", "merchant": "Nykaa", "urgency": "low"}}
+{"prompt": "Stop recurring $1299.0/mo billing for Blinkit effective today.", "target": {"intent": "subscription_cancel", "amount": 1299.0, "currency": "USD", "merchant": "Blinkit", "urgency": "low"}}
+{"prompt": "Apple Store double-billed me 850.0 rupees, reverse one charge.", "target": {"intent": "refund_request", "amount": 850.0, "currency": "INR", "merchant": "Apple Store", "urgency": "high"}}
+{"prompt": "Just cleared \u20ac850.0 bill with Razorpay.", "target": {"intent": "payment", "amount": 850.0, "currency": "EUR", "merchant": "Razorpay", "urgency": "low"}}
+{"prompt": "I don't use Blinkit anymore, please terminate my membership.", "target": {"intent": "subscription_cancel", "amount": null, "currency": null, "merchant": "Blinkit", "urgency": "low"}}
+{"prompt": "Sent 499.0 INR to AWS for this month's invoice.", "target": {"intent": "payment", "amount": 499.0, "currency": "INR", "merchant": "AWS", "urgency": "low"}}
+{"prompt": "Paid \u20b949.0 to Netflix via UPI just now, please log it.", "target": {"intent": "payment", "amount": 49.0, "currency": "INR", "merchant": "Netflix", "urgency": "low"}}
+{"prompt": "I didn't authorize a $2450.75 transaction on Netflix 2 mins ago!", "target": {"intent": "fraud_alert", "amount": 2450.75, "currency": "USD", "merchant": "Netflix", "urgency": "high"}}
+{"prompt": "Sent 850.0 INR to Zerodha for this month's invoice.", "target": {"intent": "payment", "amount": 850.0, "currency": "INR", "merchant": "Zerodha", "urgency": "low"}}
+{"prompt": "Sent 299.5 INR to AWS for this month's invoice.", "target": {"intent": "payment", "amount": 299.5, "currency": "INR", "merchant": "AWS", "urgency": "low"}}
+{"prompt": "Charged $149.0 at IRCTC on my corporate card yesterday.", "target": {"intent": "payment", "amount": 149.0, "currency": "USD", "merchant": "IRCTC", "urgency": "low"}}
+{"prompt": "Did my \u20b92450.75 deposit reflect in my savings balance yet?", "target": {"intent": "balance_inquiry", "amount": 2450.75, "currency": "INR", "merchant": null, "urgency": "medium"}}
+{"prompt": "Show current account balance in USD please.", "target": {"intent": "balance_inquiry", "amount": null, "currency": "USD", "merchant": null, "urgency": "low"}}
+{"prompt": "Order at IRCTC never arrived, need my \u20b9149.0 back immediately!", "target": {"intent": "refund_request", "amount": 149.0, "currency": "INR", "merchant": "IRCTC", "urgency": "high"}}
+{"prompt": "Sent 149.0 INR to Zepto for this month's invoice.", "target": {"intent": "payment", "amount": 149.0, "currency": "INR", "merchant": "Zepto", "urgency": "low"}}
+{"prompt": "What's my remaining wallet balance after the Swiggy spend?", "target": {"intent": "balance_inquiry", "amount": null, "currency": null, "merchant": "Swiggy", "urgency": "low"}}
+{"prompt": "Charged $12500.0 at Zepto on my corporate card yesterday.", "target": {"intent": "payment", "amount": 12500.0, "currency": "USD", "merchant": "Zepto", "urgency": "low"}}
+{"prompt": "Returned shoes to AWS, waiting on \u20b9850.0 credit.", "target": {"intent": "refund_request", "amount": 850.0, "currency": "INR", "merchant": "AWS", "urgency": "low"}}
+{"prompt": "URGENT: Unauthorized charge of \u20b9120.5 at BigBasket!! Freeze card now!", "target": {"intent": "fraud_alert", "amount": 120.5, "currency": "INR", "merchant": "BigBasket", "urgency": "high"}}
+{"prompt": "Stop recurring $299.5/mo billing for Blinkit effective today.", "target": {"intent": "subscription_cancel", "amount": 299.5, "currency": "USD", "merchant": "Blinkit", "urgency": "low"}}
+{"prompt": "Order at Nykaa never arrived, need my \u20b94999.0 back immediately!", "target": {"intent": "refund_request", "amount": 4999.0, "currency": "INR", "merchant": "Nykaa", "urgency": "high"}}
+{"prompt": "I don't use Zomato anymore, please terminate my membership.", "target": {"intent": "subscription_cancel", "amount": null, "currency": null, "merchant": "Zomato", "urgency": "low"}}
+{"prompt": "Can I get a refund for my IRCTC purchase? Not sure of exact amount.", "target": {"intent": "refund_request", "amount": null, "currency": null, "merchant": "IRCTC", "urgency": "low"}}
+{"prompt": "How much INR do I have left before paying Zomato?", "target": {"intent": "balance_inquiry", "amount": null, "currency": "INR", "merchant": "Zomato", "urgency": "low"}}
+{"prompt": "Spotify double-billed me 120.5 rupees, reverse one charge.", "target": {"intent": "refund_request", "amount": 120.5, "currency": "INR", "merchant": "Spotify", "urgency": "high"}}
+{"prompt": "Can I get a refund for my Zepto purchase? Not sure of exact amount.", "target": {"intent": "refund_request", "amount": null, "currency": null, "merchant": "Zepto", "urgency": "low"}}
+{"prompt": "I didn't authorize a $1299.0 transaction on Zepto 2 mins ago!", "target": {"intent": "fraud_alert", "amount": 1299.0, "currency": "USD", "merchant": "Zepto", "urgency": "high"}}
+{"prompt": "Sent 12500.0 INR to Adobe for this month's invoice.", "target": {"intent": "payment", "amount": 12500.0, "currency": "INR", "merchant": "Adobe", "urgency": "low"}}
+{"prompt": "Order at Croma never arrived, need my \u20b949.0 back immediately!", "target": {"intent": "refund_request", "amount": 49.0, "currency": "INR", "merchant": "Croma", "urgency": "high"}}
+{"prompt": "Charged $850.0 at Apple Store on my corporate card yesterday.", "target": {"intent": "payment", "amount": 850.0, "currency": "USD", "merchant": "Apple Store", "urgency": "low"}}
+{"prompt": "Someone is trying to use my card at Blinkit right now, help!", "target": {"intent": "fraud_alert", "amount": null, "currency": null, "merchant": "Blinkit", "urgency": "high"}}
+{"prompt": "URGENT: Unauthorized charge of \u20b949.0 at IRCTC!! Freeze card now!", "target": {"intent": "fraud_alert", "amount": 49.0, "currency": "INR", "merchant": "IRCTC", "urgency": "high"}}
+{"prompt": "Turn off auto-pay for IRCTC (1299.0 INR) right away!", "target": {"intent": "subscription_cancel", "amount": 1299.0, "currency": "INR", "merchant": "IRCTC", "urgency": "medium"}}
+{"prompt": "I don't use Flipkart anymore, please terminate my membership.", "target": {"intent": "subscription_cancel", "amount": null, "currency": null, "merchant": "Flipkart", "urgency": "low"}}
+{"prompt": "Nykaa double-billed me 299.5 rupees, reverse one charge.", "target": {"intent": "refund_request", "amount": 299.5, "currency": "INR", "merchant": "Nykaa", "urgency": "high"}}
+{"prompt": "Returned shoes to Netflix, waiting on \u20b9850.0 credit.", "target": {"intent": "refund_request", "amount": 850.0, "currency": "INR", "merchant": "Netflix", "urgency": "low"}}
+{"prompt": "Paid \u20b92450.75 to Uber via UPI just now, please log it.", "target": {"intent": "payment", "amount": 2450.75, "currency": "INR", "merchant": "Uber", "urgency": "low"}}
+{"prompt": "Order at Blinkit never arrived, need my \u20b919.99 back immediately!", "target": {"intent": "refund_request", "amount": 19.99, "currency": "INR", "merchant": "Blinkit", "urgency": "high"}}
+{"prompt": "Can I get a refund for my Razorpay purchase? Not sure of exact amount.", "target": {"intent": "refund_request", "amount": null, "currency": null, "merchant": "Razorpay", "urgency": "low"}}
+{"prompt": "BigBasket double-billed me 149.0 rupees, reverse one charge.", "target": {"intent": "refund_request", "amount": 149.0, "currency": "INR", "merchant": "BigBasket", "urgency": "high"}}
+{"prompt": "Returned shoes to Blinkit, waiting on \u20b9340.0 credit.", "target": {"intent": "refund_request", "amount": 340.0, "currency": "INR", "merchant": "Blinkit", "urgency": "low"}}
+{"prompt": "Paid \u20b9850.0 to Razorpay via UPI just now, please log it.", "target": {"intent": "payment", "amount": 850.0, "currency": "INR", "merchant": "Razorpay", "urgency": "low"}}
+{"prompt": "URGENT: Unauthorized charge of \u20b9120.5 at MakeMyTrip!! Freeze card now!", "target": {"intent": "fraud_alert", "amount": 120.5, "currency": "INR", "merchant": "MakeMyTrip", "urgency": "high"}}
+{"prompt": "Turn off auto-pay for Spotify (4999.0 INR) right away!", "target": {"intent": "subscription_cancel", "amount": 4999.0, "currency": "INR", "merchant": "Spotify", "urgency": "medium"}}
+{"prompt": "Please refund $299.5 from Uber, item was damaged on delivery.", "target": {"intent": "refund_request", "amount": 299.5, "currency": "USD", "merchant": "Uber", "urgency": "medium"}}
+{"prompt": "Not a refund\u2014I actually want to pay \u20b91,450 to Swiggy now.", "target": {"intent": "payment", "amount": 1450.0, "currency": "INR", "merchant": "Swiggy", "urgency": "low"}}
+{"prompt": "Blocked a fake $899 charge from Apple Store, card is safe now.", "target": {"intent": "fraud_alert", "amount": 899.0, "currency": "USD", "merchant": "Apple Store", "urgency": "high"}}
+{"prompt": "Netflix charged 649 rupees AFTER I cancelled\u2014refund asap!", "target": {"intent": "refund_request", "amount": 649.0, "currency": "INR", "merchant": "Netflix", "urgency": "high"}}
+{"prompt": "How much balance left? Paid 500 to Uber earlier.", "target": {"intent": "balance_inquiry", "amount": 500.0, "currency": "INR", "merchant": "Uber", "urgency": "low"}}
+{"prompt": "Kill my Adobe subscription, don't let them take $54.99 tomorrow.", "target": {"intent": "subscription_cancel", "amount": 54.99, "currency": "USD", "merchant": "Adobe", "urgency": "medium"}}
+{"prompt": "\u20b90.00 test auth from Razorpay\u2014is this fraud?", "target": {"intent": "fraud_alert", "amount": 0.0, "currency": "INR", "merchant": "Razorpay", "urgency": "high"}}

@@ -1,0 +1,344 @@
+{
+  "Setting_A_Small_350": {
+    "num_chunks": 371,
+    "recall_at_5_pct": 73.33,
+    "mrr_at_5": 0.5889,
+    "hits": 11,
+    "total": 15,
+    "per_question": [
+      {
+        "id": 1,
+        "question": "When was the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0) published and under what identifier?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 2,
+        "question": "How does NIST AI RMF define risk in the context of artificial intelligence systems?",
+        "hit_at_5": false,
+        "hit_rank": null
+      },
+      {
+        "id": 3,
+        "question": "What does the AI RMF say about risk tolerance and whether the framework prescribes specific tolerance levels?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 4,
+        "question": "Which characteristic is described as the foundational goal for overall correctness of AI system operation under expected conditions over its lifetime?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 5,
+        "question": "What tension does NIST highlight between accuracy and robustness in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 6,
+        "question": "What are the seven characteristics of trustworthy AI systems listed in Section 3 of the NIST AI RMF?",
+        "hit_at_5": true,
+        "hit_rank": 3
+      },
+      {
+        "id": 7,
+        "question": "How does NIST distinguish between explainability and interpretability in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 8,
+        "question": "What three broad categories of bias does NIST identify in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 9,
+        "question": "What are the four high-level functions in the AI RMF Core?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 10,
+        "question": "Why is the GOVERN function positioned as a cross-cutting function across the AI RMF Core?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 11,
+        "question": "What is the primary objective of the MAP function in the AI RMF Core?",
+        "hit_at_5": false,
+        "hit_rank": null
+      },
+      {
+        "id": 12,
+        "question": "How does the MEASURE function support AI risk management according to Section 5.3?",
+        "hit_at_5": true,
+        "hit_rank": 4
+      },
+      {
+        "id": 13,
+        "question": "What does the MANAGE function entail once AI risks are identified and measured?",
+        "hit_at_5": false,
+        "hit_rank": null
+      },
+      {
+        "id": 14,
+        "question": "What is TEVV in the context of NIST AI RMF lifecycle verification and validation?",
+        "hit_at_5": true,
+        "hit_rank": 4
+      },
+      {
+        "id": 15,
+        "question": "Which ISO standard does Appendix A reference for the definition of risk management principles and guidelines?",
+        "hit_at_5": false,
+        "hit_rank": null
+      }
+    ],
+    "failures": [
+      {
+        "question_id": 2,
+        "question": "How does NIST AI RMF define risk in the context of artificial intelligence systems?",
+        "gold_page": 9,
+        "gold_passage": "and Addressing Risks, Impacts, and Harms In the context of the AI RMF, risk refers to the composite measure of an event\u2019s probability of occurring and the magnitude or degree of the consequences of the corresponding event. The impacts, or consequences, of AI systems can be positive, negative, or both and can result in opportunities",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 1,
+            "score": 0.9165,
+            "snippet": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)..."
+          },
+          {
+            "rank": 2,
+            "page_num": 2,
+            "score": 0.8617,
+            "snippet": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0) This publication is available free of charge from: https://doi.org/10.6028/NIST.AI...."
+          }
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "What is the primary objective of the MAP function in the AI RMF Core?",
+        "gold_page": 29,
+        "gold_passage": "a or AI systems deemed to be high-risk. Categories Subcategories 5.2 Map The MAP function establishes the context to frame risks related to an AI system. The AI lifecycle consists of many interdependent activities involving a diverse set of actors (See Figure 3). In practice, AI actors in ch",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 25,
+            "score": 0.8277,
+            "snippet": "NIST AI 100-1 AI RMF 1.0 Part 2: Core and Profiles 5. AI RMF Core The AI RMF Core provides outcomes and actions that enable dialogue, understanding, and activit..."
+          },
+          {
+            "rank": 2,
+            "page_num": 30,
+            "score": 0.8255,
+            "snippet": "to assist in AI risk management efforts. It is incum- bent on Framework users to continue applying the MAP function to AI systems as context, capabilities, risk..."
+          }
+        ]
+      },
+      {
+        "question_id": 13,
+        "question": "What does the MANAGE function entail once AI risks are identified and measured?",
+        "gold_page": 36,
+        "gold_passage": "dentified and documented. Categories Subcategories 5.4 Manage The MANAGE function entails allocating risk resources to mapped and measured risks on a regular basis and as defined by the GOVERN function. Risk treatment comprises plans to respond to, recover from, and communicate about incidents or event",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 33,
+            "score": 0.8927,
+            "snippet": "e MANAGE function. AI systems should be tested before their deployment and regu- larly while in operation. AI risk measurements include documenting aspects of s..."
+          },
+          {
+            "rank": 2,
+            "page_num": 8,
+            "score": 0.8515,
+            "snippet": "address the risks of AI systems in practice. These functions \u2013 GOVERN, MAP, MEASURE, and MANAGE \u2013 are broken down further into categories and subcate- gories. W..."
+          }
+        ]
+      },
+      {
+        "question_id": 15,
+        "question": "Which ISO standard does Appendix A reference for the definition of risk management principles and guidelines?",
+        "gold_page": 9,
+        "gold_passage": "be positive, negative, or both and can result in opportunities or threats (Adapted from: ISO 31000:2018). When considering the negative impact of a potential event, risk is a function of 1) the negative impact, or magni- tude of harm, that wou",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 12,
+            "score": 0.6805,
+            "snippet": "isting guidelines for specific applications and use case settings. Where established guidelines do not exist, organizations should define reasonable risk tolera..."
+          },
+          {
+            "rank": 2,
+            "page_num": 27,
+            "score": 0.6687,
+            "snippet": "ace to determine the needed level of risk management activities based on the organization\u2019s risk tolerance. GOVERN 1.4: The risk management process and its outc..."
+          }
+        ]
+      }
+    ],
+    "chunk_size": 350,
+    "overlap": 50,
+    "index_time_sec": 0.9
+  },
+  "Setting_B_Large_1200": {
+    "num_chunks": 120,
+    "recall_at_5_pct": 86.67,
+    "mrr_at_5": 0.6611,
+    "hits": 13,
+    "total": 15,
+    "per_question": [
+      {
+        "id": 1,
+        "question": "When was the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0) published and under what identifier?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 2,
+        "question": "How does NIST AI RMF define risk in the context of artificial intelligence systems?",
+        "hit_at_5": false,
+        "hit_rank": null
+      },
+      {
+        "id": 3,
+        "question": "What does the AI RMF say about risk tolerance and whether the framework prescribes specific tolerance levels?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 4,
+        "question": "Which characteristic is described as the foundational goal for overall correctness of AI system operation under expected conditions over its lifetime?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 5,
+        "question": "What tension does NIST highlight between accuracy and robustness in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 6,
+        "question": "What are the seven characteristics of trustworthy AI systems listed in Section 3 of the NIST AI RMF?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 7,
+        "question": "How does NIST distinguish between explainability and interpretability in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 3
+      },
+      {
+        "id": 8,
+        "question": "What three broad categories of bias does NIST identify in AI systems?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 9,
+        "question": "What are the four high-level functions in the AI RMF Core?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 10,
+        "question": "Why is the GOVERN function positioned as a cross-cutting function across the AI RMF Core?",
+        "hit_at_5": true,
+        "hit_rank": 4
+      },
+      {
+        "id": 11,
+        "question": "What is the primary objective of the MAP function in the AI RMF Core?",
+        "hit_at_5": false,
+        "hit_rank": null
+      },
+      {
+        "id": 12,
+        "question": "How does the MEASURE function support AI risk management according to Section 5.3?",
+        "hit_at_5": true,
+        "hit_rank": 1
+      },
+      {
+        "id": 13,
+        "question": "What does the MANAGE function entail once AI risks are identified and measured?",
+        "hit_at_5": true,
+        "hit_rank": 2
+      },
+      {
+        "id": 14,
+        "question": "What is TEVV in the context of NIST AI RMF lifecycle verification and validation?",
+        "hit_at_5": true,
+        "hit_rank": 2
+      },
+      {
+        "id": 15,
+        "question": "Which ISO standard does Appendix A reference for the definition of risk management principles and guidelines?",
+        "hit_at_5": true,
+        "hit_rank": 3
+      }
+    ],
+    "failures": [
+      {
+        "question_id": 2,
+        "question": "How does NIST AI RMF define risk in the context of artificial intelligence systems?",
+        "gold_page": 9,
+        "gold_passage": "and Addressing Risks, Impacts, and Harms In the context of the AI RMF, risk refers to the composite measure of an event\u2019s probability of occurring and the magnitude or degree of the consequences of the corresponding event. The impacts, or consequences, of AI systems can be positive, negative, or both and can result in opportunities",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 1,
+            "score": 0.9165,
+            "snippet": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)..."
+          },
+          {
+            "rank": 2,
+            "page_num": 6,
+            "score": 0.8724,
+            "snippet": "NIST AI 100-1 AI RMF 1.0 Executive Summary Artificial intelligence (AI) technologies have significant potential to transform society and people\u2019s lives \u2013 from c..."
+          }
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "What is the primary objective of the MAP function in the AI RMF Core?",
+        "gold_page": 29,
+        "gold_passage": "a or AI systems deemed to be high-risk. Categories Subcategories 5.2 Map The MAP function establishes the context to frame risks related to an AI system. The AI lifecycle consists of many interdependent activities involving a diverse set of actors (See Figure 3). In practice, AI actors in ch",
+        "top_retrieved": [
+          {
+            "rank": 1,
+            "page_num": 25,
+            "score": 0.838,
+            "snippet": "NIST AI 100-1 AI RMF 1.0 Part 2: Core and Profiles 5. AI RMF Core The AI RMF Core provides outcomes and actions that enable dialogue, understanding, and activit..."
+          },
+          {
+            "rank": 2,
+            "page_num": 46,
+            "score": 0.8015,
+            "snippet": "NIST AI 100-1 AI RMF 1.0 4. Presenting AI system information to humans is complex. Humans perceive and derive meaning from AI system output and explanations in ..."
+          }
+        ]
+      }
+    ],
+    "chunk_size": 1200,
+    "overlap": 150,
+    "index_time_sec": 0.84
+  },
+  "sample_rag_answers": [
+    {
+      "question": "When was the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0) published and under what identifier?",
+      "rag_answer": "The NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0) was published on January 2023. It has the DOI number 10.6028/NIST.AI.100-1."
+    },
+    {
+      "question": "How does NIST AI RMF define risk in the context of artificial intelligence systems?",
+      "rag_answer": "NIST AI RMF defines risk in the context of artificial intelligence systems as follows:\n\nRisk is defined as \"an inherent threat or vulnerability to an AI system's performance, intended or unintended, resulting in harm or loss.\" Risk can manifest as either a current threat or a future threat, depending on the nature of the AI system and its intended use.\n\nThe AI RMF emphasizes that risk must be identified and assessed before any action is taken against an AI system. It provides a framework for prioritizing risks based on their severity and likelihood, ensuring that all relevant stakeholders are involved in the decision-making process."
+    },
+    {
+      "question": "What does the AI RMF say about risk tolerance and whether the framework prescribes specific tolerance levels?",
+      "rag_answer": "The AI RMF states that risk tolerance refers to the organization's or AI actor's readiness to bear the risk in order to achieve its objectives. It can be influenced by legal or regulatory requirements, policies, norms, and established guidelines. Risk tolerance and the level of risk that is acceptable to organizations or society are highly contextual and application-specific."
+    }
+  ]
+}
